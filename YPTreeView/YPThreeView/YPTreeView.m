@@ -33,7 +33,6 @@
         self.table.dataSource=self;
         self.table.delegate=self;
         self.table.bounces=NO;
-        self.backgroundColor=[UIColor whiteColor];
         self.table.backgroundColor=[UIColor clearColor];
         self.table.separatorStyle=UITableViewCellSeparatorStyleNone;
         [self addSubview:self.table];

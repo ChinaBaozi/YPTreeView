@@ -27,7 +27,9 @@
     //支持多选
     self.treeView.isCanMultipleChoice=YES;
     self.treeView.delegate=self;
-    self.treeView.lineColor=[UIColor darkGrayColor];
+    self.treeView.lineColor=[UIColor blackColor];
+    self.treeView.textColor=[UIColor blackColor];
+    self.treeView.backgroundColor=[UIColor colorWithRed:242/255.0 green:249/255.0 blue:255/255.0 alpha:1];
     [self.view addSubview:self.treeView];
     
     //可以异步 接口返回数据后赋值
