@@ -21,11 +21,13 @@
     
     [super viewDidLoad];
     
+    self.view.backgroundColor=[UIColor lightGrayColor];
     // Do any additional setup after loading the view, typically from a nib.
     self.treeView=[[YPTreeView alloc]initWithFrame:CGRectMake(0, 40,self.view.frame.size.width, self.view.frame.size.height-80)];
     //支持多选
     self.treeView.isCanMultipleChoice=YES;
     self.treeView.delegate=self;
+    self.treeView.lineColor=[UIColor darkGrayColor];
     [self.view addSubview:self.treeView];
     
     //可以异步 接口返回数据后赋值

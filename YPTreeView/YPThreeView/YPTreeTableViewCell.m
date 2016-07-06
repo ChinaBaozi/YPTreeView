@@ -100,11 +100,11 @@
     CGFloat labeLeft=10*SCREEN_SCALE+(SCREEN_SCALE*10*self.data.level);
     CGSize  textSize= [self sizeWithLabel:self.nameLable maxSize:CGSizeMake(SCREEN_WIDTH,SCREEN_HEIGHT)];
 
-    [self.nameLable setFrame:CGRectMake(labeLeft, 0, self.frame.size.width-(labeLeft*2), 40)];
+    [self.nameLable setFrame:CGRectMake(labeLeft, 0, self.frame.size.width-labeLeft-35, 40)];
     
     [self.image setFrame:CGRectMake(labeLeft+textSize.width+10,  (self.frame.size.height-25)/2, 25, 25)];
 
-    [self.line setFrame:CGRectMake(self.nameLable.frame.origin.y, self.nameLable.frame.origin.y+self.nameLable.frame.size.height-2, self.nameLable.frame.size.width, 1)];
+    [self.line setFrame:CGRectMake(self.nameLable.frame.origin.x, self.nameLable.frame.origin.y+self.nameLable.frame.size.height-2, self.nameLable.frame.size.width, 1)];
 
     [self.icon setFrame:CGRectMake(self.nameLable.frame.origin.x-20, 10, 20, 20)];
     
