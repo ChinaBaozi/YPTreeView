@@ -1,0 +1,375 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB211D631D2CD4CE00C57467 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB211D621D2CD4CE00C57467 /* main.m */; };
+		CB211D661D2CD4CE00C57467 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB211D651D2CD4CE00C57467 /* AppDelegate.m */; };
+		CB211D691D2CD4CE00C57467 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB211D681D2CD4CE00C57467 /* ViewController.m */; };
+		CB211D6C1D2CD4CE00C57467 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB211D6A1D2CD4CE00C57467 /* Main.storyboard */; };
+		CB211D6E1D2CD4CE00C57467 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB211D6D1D2CD4CE00C57467 /* Assets.xcassets */; };
+		CB211D711D2CD4CE00C57467 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB211D6F1D2CD4CE00C57467 /* LaunchScreen.storyboard */; };
+		CB211D7F1D2CD4E800C57467 /* YPTreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = CB211D7A1D2CD4E800C57467 /* YPTreeNode.m */; };
+		CB211D801D2CD4E800C57467 /* YPTreeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB211D7C1D2CD4E800C57467 /* YPTreeTableViewCell.m */; };
+		CB211D811D2CD4E800C57467 /* YPTreeView.m in Sources */ = {isa = PBXBuildFile; fileRef = CB211D7E1D2CD4E800C57467 /* YPTreeView.m */; };
+		CB211D881D2CD9AF00C57467 /* cell_select@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CB211D821D2CD9AF00C57467 /* cell_select@3x.png */; };
+		CB211D891D2CD9AF00C57467 /* cell_unselect@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CB211D831D2CD9AF00C57467 /* cell_unselect@2x.png */; };
+		CB211D8A1D2CD9AF00C57467 /* cell_unselect@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CB211D841D2CD9AF00C57467 /* cell_unselect@3x.png */; };
+		CB211D8B1D2CD9AF00C57467 /* cell_select@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CB211D851D2CD9AF00C57467 /* cell_select@2x.png */; };
+		CB211D8C1D2CD9AF00C57467 /* three_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CB211D861D2CD9AF00C57467 /* three_icon@2x.png */; };
+		CB211D8D1D2CD9AF00C57467 /* three_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CB211D871D2CD9AF00C57467 /* three_icon@3x.png */; };
+		CB211D921D2CDC1900C57467 /* radio_unchecked@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CB211D8E1D2CDC1900C57467 /* radio_unchecked@3x.png */; };
+		CB211D931D2CDC1900C57467 /* radio_unchecked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CB211D8F1D2CDC1900C57467 /* radio_unchecked@2x.png */; };
+		CB211D941D2CDC1900C57467 /* radio_checked@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CB211D901D2CDC1900C57467 /* radio_checked@3x.png */; };
+		CB211D951D2CDC1900C57467 /* radio_checked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CB211D911D2CDC1900C57467 /* radio_checked@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CB211D5E1D2CD4CE00C57467 /* YPTreeView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YPTreeView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB211D621D2CD4CE00C57467 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CB211D641D2CD4CE00C57467 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CB211D651D2CD4CE00C57467 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CB211D671D2CD4CE00C57467 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CB211D681D2CD4CE00C57467 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CB211D6B1D2CD4CE00C57467 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CB211D6D1D2CD4CE00C57467 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB211D701D2CD4CE00C57467 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CB211D721D2CD4CE00C57467 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB211D791D2CD4E800C57467 /* YPTreeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPTreeNode.h; sourceTree = "<group>"; };
+		CB211D7A1D2CD4E800C57467 /* YPTreeNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPTreeNode.m; sourceTree = "<group>"; };
+		CB211D7B1D2CD4E800C57467 /* YPTreeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPTreeTableViewCell.h; sourceTree = "<group>"; };
+		CB211D7C1D2CD4E800C57467 /* YPTreeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPTreeTableViewCell.m; sourceTree = "<group>"; };
+		CB211D7D1D2CD4E800C57467 /* YPTreeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPTreeView.h; sourceTree = "<group>"; };
+		CB211D7E1D2CD4E800C57467 /* YPTreeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPTreeView.m; sourceTree = "<group>"; };
+		CB211D821D2CD9AF00C57467 /* cell_select@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cell_select@3x.png"; sourceTree = "<group>"; };
+		CB211D831D2CD9AF00C57467 /* cell_unselect@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cell_unselect@2x.png"; sourceTree = "<group>"; };
+		CB211D841D2CD9AF00C57467 /* cell_unselect@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cell_unselect@3x.png"; sourceTree = "<group>"; };
+		CB211D851D2CD9AF00C57467 /* cell_select@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cell_select@2x.png"; sourceTree = "<group>"; };
+		CB211D861D2CD9AF00C57467 /* three_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "three_icon@2x.png"; sourceTree = "<group>"; };
+		CB211D871D2CD9AF00C57467 /* three_icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "three_icon@3x.png"; sourceTree = "<group>"; };
+		CB211D8E1D2CDC1900C57467 /* radio_unchecked@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radio_unchecked@3x.png"; sourceTree = "<group>"; };
+		CB211D8F1D2CDC1900C57467 /* radio_unchecked@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radio_unchecked@2x.png"; sourceTree = "<group>"; };
+		CB211D901D2CDC1900C57467 /* radio_checked@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radio_checked@3x.png"; sourceTree = "<group>"; };
+		CB211D911D2CDC1900C57467 /* radio_checked@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radio_checked@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB211D5B1D2CD4CE00C57467 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CB211D551D2CD4CE00C57467 = {
+			isa = PBXGroup;
+			children = (
+				CB211D601D2CD4CE00C57467 /* YPTreeView */,
+				CB211D5F1D2CD4CE00C57467 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CB211D5F1D2CD4CE00C57467 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB211D5E1D2CD4CE00C57467 /* YPTreeView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB211D601D2CD4CE00C57467 /* YPTreeView */ = {
+			isa = PBXGroup;
+			children = (
+				CB211D781D2CD4E800C57467 /* YPThreeView */,
+				CB211D641D2CD4CE00C57467 /* AppDelegate.h */,
+				CB211D651D2CD4CE00C57467 /* AppDelegate.m */,
+				CB211D671D2CD4CE00C57467 /* ViewController.h */,
+				CB211D681D2CD4CE00C57467 /* ViewController.m */,
+				CB211D6A1D2CD4CE00C57467 /* Main.storyboard */,
+				CB211D6D1D2CD4CE00C57467 /* Assets.xcassets */,
+				CB211D6F1D2CD4CE00C57467 /* LaunchScreen.storyboard */,
+				CB211D721D2CD4CE00C57467 /* Info.plist */,
+				CB211D611D2CD4CE00C57467 /* Supporting Files */,
+			);
+			path = YPTreeView;
+			sourceTree = "<group>";
+		};
+		CB211D611D2CD4CE00C57467 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB211D621D2CD4CE00C57467 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CB211D781D2CD4E800C57467 /* YPThreeView */ = {
+			isa = PBXGroup;
+			children = (
+				CB211D821D2CD9AF00C57467 /* cell_select@3x.png */,
+				CB211D831D2CD9AF00C57467 /* cell_unselect@2x.png */,
+				CB211D841D2CD9AF00C57467 /* cell_unselect@3x.png */,
+				CB211D851D2CD9AF00C57467 /* cell_select@2x.png */,
+				CB211D861D2CD9AF00C57467 /* three_icon@2x.png */,
+				CB211D871D2CD9AF00C57467 /* three_icon@3x.png */,
+				CB211D8E1D2CDC1900C57467 /* radio_unchecked@3x.png */,
+				CB211D8F1D2CDC1900C57467 /* radio_unchecked@2x.png */,
+				CB211D901D2CDC1900C57467 /* radio_checked@3x.png */,
+				CB211D911D2CDC1900C57467 /* radio_checked@2x.png */,
+				CB211D791D2CD4E800C57467 /* YPTreeNode.h */,
+				CB211D7A1D2CD4E800C57467 /* YPTreeNode.m */,
+				CB211D7B1D2CD4E800C57467 /* YPTreeTableViewCell.h */,
+				CB211D7C1D2CD4E800C57467 /* YPTreeTableViewCell.m */,
+				CB211D7D1D2CD4E800C57467 /* YPTreeView.h */,
+				CB211D7E1D2CD4E800C57467 /* YPTreeView.m */,
+			);
+			path = YPThreeView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB211D5D1D2CD4CE00C57467 /* YPTreeView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB211D751D2CD4CE00C57467 /* Build configuration list for PBXNativeTarget "YPTreeView" */;
+			buildPhases = (
+				CB211D5A1D2CD4CE00C57467 /* Sources */,
+				CB211D5B1D2CD4CE00C57467 /* Frameworks */,
+				CB211D5C1D2CD4CE00C57467 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YPTreeView;
+			productName = YPTreeView;
+			productReference = CB211D5E1D2CD4CE00C57467 /* YPTreeView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB211D561D2CD4CE00C57467 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = YPTreeView;
+				TargetAttributes = {
+					CB211D5D1D2CD4CE00C57467 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = CB211D591D2CD4CE00C57467 /* Build configuration list for PBXProject "YPTreeView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CB211D551D2CD4CE00C57467;
+			productRefGroup = CB211D5F1D2CD4CE00C57467 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB211D5D1D2CD4CE00C57467 /* YPTreeView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB211D5C1D2CD4CE00C57467 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB211D711D2CD4CE00C57467 /* LaunchScreen.storyboard in Resources */,
+				CB211D6E1D2CD4CE00C57467 /* Assets.xcassets in Resources */,
+				CB211D6C1D2CD4CE00C57467 /* Main.storyboard in Resources */,
+				CB211D891D2CD9AF00C57467 /* cell_unselect@2x.png in Resources */,
+				CB211D951D2CDC1900C57467 /* radio_checked@2x.png in Resources */,
+				CB211D8B1D2CD9AF00C57467 /* cell_select@2x.png in Resources */,
+				CB211D8A1D2CD9AF00C57467 /* cell_unselect@3x.png in Resources */,
+				CB211D8C1D2CD9AF00C57467 /* three_icon@2x.png in Resources */,
+				CB211D941D2CDC1900C57467 /* radio_checked@3x.png in Resources */,
+				CB211D881D2CD9AF00C57467 /* cell_select@3x.png in Resources */,
+				CB211D921D2CDC1900C57467 /* radio_unchecked@3x.png in Resources */,
+				CB211D931D2CDC1900C57467 /* radio_unchecked@2x.png in Resources */,
+				CB211D8D1D2CD9AF00C57467 /* three_icon@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB211D5A1D2CD4CE00C57467 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB211D691D2CD4CE00C57467 /* ViewController.m in Sources */,
+				CB211D811D2CD4E800C57467 /* YPTreeView.m in Sources */,
+				CB211D801D2CD4E800C57467 /* YPTreeTableViewCell.m in Sources */,
+				CB211D661D2CD4CE00C57467 /* AppDelegate.m in Sources */,
+				CB211D7F1D2CD4E800C57467 /* YPTreeNode.m in Sources */,
+				CB211D631D2CD4CE00C57467 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CB211D6A1D2CD4CE00C57467 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB211D6B1D2CD4CE00C57467 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CB211D6F1D2CD4CE00C57467 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB211D701D2CD4CE00C57467 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CB211D731D2CD4CE00C57467 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CB211D741D2CD4CE00C57467 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB211D761D2CD4CE00C57467 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = YPTreeView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.com.YPTreeView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CB211D771D2CD4CE00C57467 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = YPTreeView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.com.YPTreeView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB211D591D2CD4CE00C57467 /* Build configuration list for PBXProject "YPTreeView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB211D731D2CD4CE00C57467 /* Debug */,
+				CB211D741D2CD4CE00C57467 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB211D751D2CD4CE00C57467 /* Build configuration list for PBXNativeTarget "YPTreeView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB211D761D2CD4CE00C57467 /* Debug */,
+				CB211D771D2CD4CE00C57467 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CB211D561D2CD4CE00C57467 /* Project object */;
+}
