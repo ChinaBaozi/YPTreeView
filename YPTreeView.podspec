@@ -19,14 +19,13 @@ Pod::Spec.new do |s|
   s.author             = { "ChinaBaozi" => "chinabaozi@yeah.net" }
   s.platform     = :ios
 
-  s.source       = { :git => "https://github.com/ChinaBaozi/YPTreeView.git", :tag => "0.0.1" }
+  s.source       = { :git => "https://github.com/ChinaBaozi/YPTreeView.git", :tag => "0.0.2" }
 
 
   s.source_files   = "Classes/*.{h,m}"
   #s.exclude_files = "Classes/Exclude"
   s.public_header_files = "Classes/YPTreeView.h"
   #s.resource_bundles =  "Classes/YPTreeView.bundle/*.png" 
-  s.resource     = 'Classes/YPTreeView.bundle'
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -37,7 +36,7 @@ Pod::Spec.new do |s|
   #  non-essential files like tests, examples and documentation.
   #
 
-  # s.resource  = "icon.png"
+  s.resource     = "Classes/YPTreeView.bundle"
   # s.resources = "Resources/*.png"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
