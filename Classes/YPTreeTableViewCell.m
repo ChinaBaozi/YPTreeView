@@ -41,15 +41,11 @@
     
         UIButton *backgroundBtn=[[UIButton alloc]init];
         [backgroundBtn addTarget:self action:@selector(clickBtn:) forControlEvents:UIControlEventTouchUpInside];
-//        backgroundBtn.backgroundColor=[UIColor grayColor];
         self.backgroundBtn=backgroundBtn;
         [self.contentView addSubview:backgroundBtn];
 
-        
         self.nameLable=[[UILabel alloc]init];
-//        self.nameLable.textColor=[UIColor blackColor];
         self.nameLable.font=[UIFont systemFontOfSize:14];
-//        self.nameLable.backgroundColor=[UIColor brownColor];
         self.backgroundColor=[UIColor clearColor];
         [self.contentView addSubview:self.nameLable];
         
@@ -58,13 +54,9 @@
         [self.contentView addSubview:self.line];
         
         
-      
         UIButton *icon=[[UIButton alloc]init];
-        [icon setImage:[UIImage imageNamed:@"three_icon"] forState:UIControlStateNormal];
-        //        icon.backgroundColor=[UIColor orangeColor];
-        //        [icon.imageView setFrame:CGRectMake(6, 6, 12, 12)];
+        [icon setImage:[UIImage imageNamed:@"YPThreeView.bundle/three_icon"] forState:UIControlStateNormal];
         icon.imageEdgeInsets=UIEdgeInsetsMake(6, 6, 6, 6);
-        //        [icon addTarget:self action:@selector(clickBtn:) forControlEvents:UIControlEventTouchUpInside];
         icon.userInteractionEnabled=NO;
         self.icon=icon;
         self.icon.hidden=YES;
@@ -74,16 +66,13 @@
         self.selectBtn=[[UIButton alloc]init];
         self.selectBtn.frame=CGRectMake(30, 17.5, 20, 20);
         self.selectBtn.userInteractionEnabled=NO;
-        [self.selectBtn setImage:[UIImage imageNamed:@"cell_unselect"] forState:UIControlStateNormal];
-        [self.selectBtn setImage:[UIImage imageNamed:@"cell_select"] forState:UIControlStateSelected];
-//        self.selectBtn.hidden=YES;
+        [self.selectBtn setImage:[UIImage imageNamed:@"YPThreeView.bundle/cell_unselect"] forState:UIControlStateNormal];
+        [self.selectBtn setImage:[UIImage imageNamed:@"YPThreeView.bundle/cell_select"] forState:UIControlStateSelected];
         
         self.selectBtn.userInteractionEnabled=NO;
-//        [self.selectBtn addTarget:self action:@selector(selectClick:) forControlEvents:UIControlEventTouchUpInside];
         [self.contentView addSubview:self.selectBtn];
         
         self.image=[[UIImageView alloc]init];
-//        self.image.backgroundColor=[UIColor brownColor];
         [self.contentView addSubview:self.image];
         
         self.isCanMultipleChoice=NO;
@@ -153,29 +142,19 @@
 
 }
 
-//- (void)setSelected:(BOOL)selected animated:(BOOL)animated{
-//
-//    [super setSelected:selected animated:animated];
-//    
-//    if (!self.isMultipleTouchEnabled) {
-//        self.check=selected;
-//
-//    }
-//}
 
 - (void)setIsCanMultipleChoice:(BOOL)isCanMultipleChoice{
 
     _isCanMultipleChoice=isCanMultipleChoice;
-//    self.selectBtn.hidden=!isCanMultipleChoice;
     if (!isCanMultipleChoice) {
-        [self.selectBtn setImage:[UIImage imageNamed:@"radio_unchecked"] forState:UIControlStateNormal];
-        [self.selectBtn setImage:[UIImage imageNamed:@"radio_checked"] forState:UIControlStateSelected];
-        [self.selectBtn setImage:[UIImage imageNamed:@"radio_checked"] forState:UIControlStateHighlighted];
+        [self.selectBtn setImage:[UIImage imageNamed:@"YPThreeView.bundle/radio_unchecked"] forState:UIControlStateNormal];
+        [self.selectBtn setImage:[UIImage imageNamed:@"YPThreeView.bundle/radio_checked"] forState:UIControlStateSelected];
+        [self.selectBtn setImage:[UIImage imageNamed:@"YPThreeView.bundle/radio_checked"] forState:UIControlStateHighlighted];
     }else{
     
-        [self.selectBtn setImage:[UIImage imageNamed:@"cell_unselect"] forState:UIControlStateNormal];
-        [self.selectBtn setImage:[UIImage imageNamed:@"cell_select"] forState:UIControlStateSelected];
-         [self.selectBtn setImage:[UIImage imageNamed:@"cell_select"] forState:UIControlStateHighlighted];
+        [self.selectBtn setImage:[UIImage imageNamed:@"YPThreeView.bundle/cell_unselect"] forState:UIControlStateNormal];
+        [self.selectBtn setImage:[UIImage imageNamed:@"YPThreeView.bundle/cell_select"] forState:UIControlStateSelected];
+         [self.selectBtn setImage:[UIImage imageNamed:@"YPThreeView.bundle/cell_select"] forState:UIControlStateHighlighted];
 
     }
    
@@ -236,64 +215,5 @@
     return [lable.text boundingRectWithSize:maxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:attrs context:nil].size;
 }
 
-//-(void)selectClick:(UIButton *)button{
-//
-//
-//}
-//-(void)setIsDrawing:(BOOL)isDrawing{
-//    
-//    
-////    if (_isDrawing!=isDrawing) {
-//        _isDrawing=isDrawing;
-//        if (isDrawing) {
-//            [UIView beginAnimations:nil context:nil];
-//            [UIView setAnimationDuration:0.2];
-////            self.ic.frame = CGRectMake(self.frame.origin.x, self.frame.origin.y+self.frame.size.height, self.frame.size.width, self.dropHeight);
-//            self.icon.transform=CGAffineTransformMakeRotation(M_PI_2);
-//            [UIView commitAnimations];
-////            [self.superview addSubview:self.table];
-//
-//        }else{
-//        
-//            
-//            [UIView beginAnimations:nil context:nil];
-//            [UIView setAnimationDuration:0.2];
-//            self.icon.transform=CGAffineTransformMakeRotation(0);
-////            self.table.frame = CGRectMake(self.frame.origin.x, self.frame.origin.y+self.frame.size.height, self.width, 0);
-//            [UIView commitAnimations];
-//        }
-//        
-////    }
-//
-//}
 
-//- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
-//{
-//    if ([keyPath isEqualToString:@"isOpen"]) {
-//        YPTreeNode *node=(YPTreeNode*)object;
-//        if(node.isOpen){
-//        
-//            [UIView beginAnimations:nil context:nil];
-//            [UIView setAnimationDuration:1.5];
-//            self.icon.transform=CGAffineTransformMakeRotation(M_PI_2);
-//            [UIView commitAnimations];
-//
-//        }else{
-//        
-//            [UIView beginAnimations:nil context:nil];
-//            [UIView setAnimationDuration:1.5];
-//            self.icon.transform=CGAffineTransformMakeRotation(0);
-//            [UIView commitAnimations];
-//
-//        }
-//        
-//    } else {
-//        [super observeValueForKeyPath:keyPath ofObject:object change:change context:context];
-//    }
-//}
-//- (void)dealloc
-//{
-//    [super dealloc];
-//    [self.data removeObserver:self forKeyPath:@"isOpen" context:nil];
-//}
 @end

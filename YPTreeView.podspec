@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
 
 
   s.license      = "MIT"
-  # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author             = { "ChinaBaozi" => "chinabaozi@yeah.net" }
   s.platform     = :ios
 
@@ -24,7 +24,9 @@ Pod::Spec.new do |s|
 
   s.source_files   = "Classes/*.{h,m}"
   #s.exclude_files = "Classes/Exclude"
-  #s.public_header_files = "Classes/YPTreeView.h"
+  s.public_header_files = "Classes/YPTreeView.h"
+  #s.resource_bundles =  "Classes/YPTreeView.bundle/*.png" 
+  s.resource     = 'Classes/YPTreeView.bundle'
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
