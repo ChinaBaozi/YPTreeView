@@ -368,6 +368,7 @@
 				CB211D771D2CD4CE00C57467 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
