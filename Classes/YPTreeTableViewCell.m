@@ -55,7 +55,7 @@
         
         
         UIButton *icon=[[UIButton alloc]init];
-        [icon setImage:[UIImage imageNamed:@"YPThreeView.bundle/three_icon"] forState:UIControlStateNormal];
+        [icon setImage:[UIImage imageWithContentsOfFile:[[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"YPTreeView.Bundle/three_icon"]] forState:UIControlStateNormal];
         icon.imageEdgeInsets=UIEdgeInsetsMake(6, 6, 6, 6);
         icon.userInteractionEnabled=NO;
         self.icon=icon;
@@ -66,8 +66,8 @@
         self.selectBtn=[[UIButton alloc]init];
         self.selectBtn.frame=CGRectMake(30, 17.5, 20, 20);
         self.selectBtn.userInteractionEnabled=NO;
-        [self.selectBtn setImage:[UIImage imageNamed:@"YPThreeView.bundle/cell_unselect"] forState:UIControlStateNormal];
-        [self.selectBtn setImage:[UIImage imageNamed:@"YPThreeView.bundle/cell_select"] forState:UIControlStateSelected];
+        [self.selectBtn setImage:[UIImage imageWithContentsOfFile:[[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"YPTreeView.Bundle/cell_unselect"]] forState:UIControlStateNormal];
+        [self.selectBtn setImage:[UIImage imageWithContentsOfFile:[[[NSBundle mainBundle]resourcePath] stringByAppendingPathComponent:@"YPTreeView.bundle/cell_select"]]forState:UIControlStateSelected];
         
         self.selectBtn.userInteractionEnabled=NO;
         [self.contentView addSubview:self.selectBtn];
@@ -147,14 +147,14 @@
 
     _isCanMultipleChoice=isCanMultipleChoice;
     if (!isCanMultipleChoice) {
-        [self.selectBtn setImage:[UIImage imageNamed:@"YPThreeView.bundle/radio_unchecked"] forState:UIControlStateNormal];
-        [self.selectBtn setImage:[UIImage imageNamed:@"YPThreeView.bundle/radio_checked"] forState:UIControlStateSelected];
-        [self.selectBtn setImage:[UIImage imageNamed:@"YPThreeView.bundle/radio_checked"] forState:UIControlStateHighlighted];
+        [self.selectBtn setImage:[UIImage imageWithContentsOfFile:[[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"YPTreeView.bundle/radio_unchecked"]] forState:UIControlStateNormal];
+        [self.selectBtn setImage:[UIImage imageWithContentsOfFile:[[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"YPTreeView.bundle/radio_checked"]] forState:UIControlStateSelected];
+        [self.selectBtn setImage:[UIImage imageWithContentsOfFile:[[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"YPTreeView.bundle/radio_checked"]]forState:UIControlStateHighlighted];
     }else{
     
-        [self.selectBtn setImage:[UIImage imageNamed:@"YPThreeView.bundle/cell_unselect"] forState:UIControlStateNormal];
-        [self.selectBtn setImage:[UIImage imageNamed:@"YPThreeView.bundle/cell_select"] forState:UIControlStateSelected];
-         [self.selectBtn setImage:[UIImage imageNamed:@"YPThreeView.bundle/cell_select"] forState:UIControlStateHighlighted];
+        [self.selectBtn setImage:[UIImage imageWithContentsOfFile:[[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"YPTreeView.Bundle/cell_unselect"]]  forState:UIControlStateNormal];
+        [self.selectBtn setImage:[UIImage imageWithContentsOfFile:[[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"YPTreeView.bundle/cell_select"]] forState:UIControlStateSelected];
+         [self.selectBtn setImage:[UIImage imageWithContentsOfFile:[[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"YPTreeView.bundle/cell_select"]] forState:UIControlStateHighlighted];
 
     }
    

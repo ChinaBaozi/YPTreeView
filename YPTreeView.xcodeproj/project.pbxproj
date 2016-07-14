@@ -16,7 +16,7 @@
 		CB655C271D363A93001CA1C3 /* YPTreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = CB655C211D363A93001CA1C3 /* YPTreeNode.m */; };
 		CB655C281D363A93001CA1C3 /* YPTreeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB655C231D363A93001CA1C3 /* YPTreeTableViewCell.m */; };
 		CB655C291D363A93001CA1C3 /* YPTreeView.m in Sources */ = {isa = PBXBuildFile; fileRef = CB655C251D363A93001CA1C3 /* YPTreeView.m */; };
-		CB655C2B1D363F52001CA1C3 /* YPTreeView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CB655C2A1D363F52001CA1C3 /* YPTreeView.bundle */; };
+		CBCBB73D1D373CE4009200F7 /* YPTreeView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CBCBB73C1D373CE4009200F7 /* YPTreeView.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,7 +36,7 @@
 		CB655C231D363A93001CA1C3 /* YPTreeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPTreeTableViewCell.m; sourceTree = "<group>"; };
 		CB655C241D363A93001CA1C3 /* YPTreeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPTreeView.h; sourceTree = "<group>"; };
 		CB655C251D363A93001CA1C3 /* YPTreeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPTreeView.m; sourceTree = "<group>"; };
-		CB655C2A1D363F52001CA1C3 /* YPTreeView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = YPTreeView.bundle; sourceTree = "<group>"; };
+		CBCBB73C1D373CE4009200F7 /* YPTreeView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = YPTreeView.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +94,7 @@
 		CB655C1E1D363A93001CA1C3 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				CB655C2A1D363F52001CA1C3 /* YPTreeView.bundle */,
+				CBCBB73B1D373CE4009200F7 /* Resources */,
 				CB655C201D363A93001CA1C3 /* YPTreeNode.h */,
 				CB655C211D363A93001CA1C3 /* YPTreeNode.m */,
 				CB655C221D363A93001CA1C3 /* YPTreeTableViewCell.h */,
@@ -104,6 +104,14 @@
 			);
 			path = Classes;
 			sourceTree = SOURCE_ROOT;
+		};
+		CBCBB73B1D373CE4009200F7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CBCBB73C1D373CE4009200F7 /* YPTreeView.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -163,7 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB211D711D2CD4CE00C57467 /* LaunchScreen.storyboard in Resources */,
-				CB655C2B1D363F52001CA1C3 /* YPTreeView.bundle in Resources */,
+				CBCBB73D1D373CE4009200F7 /* YPTreeView.bundle in Resources */,
 				CB211D6E1D2CD4CE00C57467 /* Assets.xcassets in Resources */,
 				CB211D6C1D2CD4CE00C57467 /* Main.storyboard in Resources */,
 			);
