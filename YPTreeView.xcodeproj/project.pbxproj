@@ -30,13 +30,13 @@
 		CB211D6D1D2CD4CE00C57467 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB211D701D2CD4CE00C57467 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB211D721D2CD4CE00C57467 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CB655C201D363A93001CA1C3 /* YPTreeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPTreeNode.h; sourceTree = "<group>"; };
 		CB655C211D363A93001CA1C3 /* YPTreeNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPTreeNode.m; sourceTree = "<group>"; };
 		CB655C221D363A93001CA1C3 /* YPTreeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPTreeTableViewCell.h; sourceTree = "<group>"; };
 		CB655C231D363A93001CA1C3 /* YPTreeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPTreeTableViewCell.m; sourceTree = "<group>"; };
 		CB655C241D363A93001CA1C3 /* YPTreeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPTreeView.h; sourceTree = "<group>"; };
 		CB655C251D363A93001CA1C3 /* YPTreeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPTreeView.m; sourceTree = "<group>"; };
 		CBCBB73C1D373CE4009200F7 /* YPTreeView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = YPTreeView.bundle; sourceTree = "<group>"; };
+		CBCBB75B1D377A06009200F7 /* YPTreeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPTreeNode.h; path = Classes/YPTreeNode.h; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,12 +95,12 @@
 			isa = PBXGroup;
 			children = (
 				CBCBB73B1D373CE4009200F7 /* Resources */,
-				CB655C201D363A93001CA1C3 /* YPTreeNode.h */,
-				CB655C211D363A93001CA1C3 /* YPTreeNode.m */,
 				CB655C221D363A93001CA1C3 /* YPTreeTableViewCell.h */,
 				CB655C231D363A93001CA1C3 /* YPTreeTableViewCell.m */,
 				CB655C241D363A93001CA1C3 /* YPTreeView.h */,
 				CB655C251D363A93001CA1C3 /* YPTreeView.m */,
+				CBCBB75B1D377A06009200F7 /* YPTreeNode.h */,
+				CB655C211D363A93001CA1C3 /* YPTreeNode.m */,
 			);
 			path = Classes;
 			sourceTree = SOURCE_ROOT;

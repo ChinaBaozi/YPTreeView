@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "YPTreeView.h"
+#import "YPTreeNode.h"
 
 @interface ViewController ()<YPTreeViewDelegate>
 

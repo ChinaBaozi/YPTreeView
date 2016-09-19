@@ -7,15 +7,18 @@
 //
 
 #import "YPTreeTableViewCell.h"
-//#import "UIView+RSAdditions.h"
-//#import "UIColor+Hex.h"
-//#import "NSString+Size.h"
+
 /**
  *  屏幕高度，宽度，宽度比
  */
 #define SCREEN_WIDTH [[UIScreen mainScreen] bounds].size.width
 #define SCREEN_SCALE ([[UIScreen mainScreen] bounds].size.width/360)
 #define SCREEN_HEIGHT [[UIScreen mainScreen] bounds].size.height
+
+#define YPThreeViewSrcName(file)     [@"YPTreeView.bundle" stringByAppendingPathComponent:file]
+#define YPThreeViewFrameworkSrcName(file)     [@"Frameworks/YPTreeView.framework/YPTreeView.bundle" stringByAppendingPathComponent:file]
+
+#define YPThreeViewImage(file)      [UIImage imageNamed:YPThreeViewSrcName(file)] ? :[UIImage imageNamed:YPThreeViewFrameworkSrcName(file)]
 
 @interface YPTreeTableViewCell ()
 
@@ -55,7 +58,7 @@
         
         
         UIButton *icon=[[UIButton alloc]init];
-        [icon setImage:[UIImage imageWithContentsOfFile:[[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"YPTreeView.Bundle/three_icon"]] forState:UIControlStateNormal];
+        [icon setImage:YPThreeViewImage(@"three_icon.png") forState:UIControlStateNormal];
         icon.imageEdgeInsets=UIEdgeInsetsMake(6, 6, 6, 6);
         icon.userInteractionEnabled=NO;
         self.icon=icon;
@@ -66,8 +69,8 @@
         self.selectBtn=[[UIButton alloc]init];
         self.selectBtn.frame=CGRectMake(30, 17.5, 20, 20);
         self.selectBtn.userInteractionEnabled=NO;
-        [self.selectBtn setImage:[UIImage imageWithContentsOfFile:[[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"YPTreeView.Bundle/cell_unselect"]] forState:UIControlStateNormal];
-        [self.selectBtn setImage:[UIImage imageWithContentsOfFile:[[[NSBundle mainBundle]resourcePath] stringByAppendingPathComponent:@"YPTreeView.bundle/cell_select"]]forState:UIControlStateSelected];
+        [self.selectBtn setImage:YPThreeViewImage(@"cell_unselect") forState:UIControlStateNormal];
+        [self.selectBtn setImage:YPThreeViewImage(@"cell_select")forState:UIControlStateSelected];
         
         self.selectBtn.userInteractionEnabled=NO;
         [self.contentView addSubview:self.selectBtn];
@@ -147,14 +150,14 @@
 
     _isCanMultipleChoice=isCanMultipleChoice;
     if (!isCanMultipleChoice) {
-        [self.selectBtn setImage:[UIImage imageWithContentsOfFile:[[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"YPTreeView.bundle/radio_unchecked"]] forState:UIControlStateNormal];
-        [self.selectBtn setImage:[UIImage imageWithContentsOfFile:[[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"YPTreeView.bundle/radio_checked"]] forState:UIControlStateSelected];
-        [self.selectBtn setImage:[UIImage imageWithContentsOfFile:[[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"YPTreeView.bundle/radio_checked"]]forState:UIControlStateHighlighted];
+        [self.selectBtn setImage:YPThreeViewImage(@"radio_unchecked") forState:UIControlStateNormal];
+        [self.selectBtn setImage:YPThreeViewImage(@"radio_checked") forState:UIControlStateSelected];
+        [self.selectBtn setImage:YPThreeViewImage(@"radio_checked") forState:UIControlStateHighlighted];
     }else{
     
-        [self.selectBtn setImage:[UIImage imageWithContentsOfFile:[[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"YPTreeView.Bundle/cell_unselect"]]  forState:UIControlStateNormal];
-        [self.selectBtn setImage:[UIImage imageWithContentsOfFile:[[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"YPTreeView.bundle/cell_select"]] forState:UIControlStateSelected];
-         [self.selectBtn setImage:[UIImage imageWithContentsOfFile:[[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"YPTreeView.bundle/cell_select"]] forState:UIControlStateHighlighted];
+        [self.selectBtn setImage:YPThreeViewImage(@"cell_unselect") forState:UIControlStateNormal];
+        [self.selectBtn setImage:YPThreeViewImage(@"cell_select") forState:UIControlStateSelected];
+         [self.selectBtn setImage:YPThreeViewImage(@"cell_select")  forState:UIControlStateHighlighted];
 
     }
    
