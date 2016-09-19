@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.author             = { "ChinaBaozi" => "chinabaozi@yeah.net" }
   s.platform     = :ios
 
-  s.source       = { :git => "https://github.com/ChinaBaozi/YPTreeView.git", :tag => "0.0.5" }
+  s.source       = { :git => "https://github.com/ChinaBaozi/YPTreeView.git", :tag => "0.0.6" }
   s.source_files   = "Classes", "YPTreeView/Classes/*.{h,m}"
   #s.exclude_files = "Classes/Exclude"
   s.public_header_files = "Classes/YPTreeView.h","Classes/YPTreeNode.h"
