@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "YPTreeView"
-  s.version      = "0.0.5"
+  s.version      = "0.0.6"
   s.summary      = "easy-to-use interface of the tree structure"
   s.description  = <<-DESC
                    easy-to-use interface of the tree structure,thank for you use it.
